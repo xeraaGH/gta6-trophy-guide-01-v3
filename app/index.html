@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="title-block">
+    <h1>Leonida Trophy Guide</h1>
+    <p class="subtitle">Every PlayStation 5 trophy of Grand Theft Auto VI — a checklist, a roadmap to the Platinum, and a cited guide for each trophy. Works fully offline.</p>
+  </div>
+  <div class="progress-block">
+    <p id="progress-count" class="progress-count">0 of 55 earned</p>
+    <p id="progress-grades" class="progress-grades">Platinum 0/1 · Gold 0/2 · Silver 1/6 · Bronze 12/46</p>
+    <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <button type="button" class="tab active" data-view="checklist">Checklist</button>
+  <button type="button" class="tab" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-view="missables">Missables</button>
+</nav>
+<main>
+  <section id="view-checklist">
+    <div class="filters">
+      <div class="filter-row">
+        <label class="search-label" for="search">Search</label>
+        <input id="search" type="search" placeholder="Trophy name or guide text" autocomplete="off">
+        <div id="kind-chips" class="chip-row"></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Grade</span>
+        <div id="grade-chips" class="chip-row"></div>
+        <div id="earned-chips" class="chip-row"></div>
+        <label class="spoiler-label"><input id="spoilers" type="checkbox" checked> Hide story spoilers</label>
+        <button id="export" type="button" class="btn">Export progress</button>
+        <label class="btn import-btn">Import progress <input id="import" type="file" accept="application/json"></label>
+      </div>
+    </div>
+    <p id="showing" class="showing">Showing 55 of 55 trophies</p>
+    <div class="content">
+      <div id="list" class="list" aria-label="Trophy checklist"></div>
+      <aside id="detail" class="detail" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+  <section id="view-roadmap" hidden></section>
+  <section id="view-missables" hidden></section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
